@@ -1,0 +1,11 @@
+{
+	"pages": [
+			{% for page in pages %}
+				{
+			    	"creation_time" : "{{ page.creation_time }}",
+			    	"title" : "{{page.title}}",
+			    	"id" : "{{page.id}}"
+				},
+			{% endfor %}
+	]
+}
