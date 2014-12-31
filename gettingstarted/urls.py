@@ -11,5 +11,7 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^meebly/rest', hello.views.rest, name='rest')
+    url(r'^meebly/rest', hello.views.rest, name='rest'),
+    url(r'^meebly/new_page_id', hello.views.last_id, name='last_id'),
+    
 )

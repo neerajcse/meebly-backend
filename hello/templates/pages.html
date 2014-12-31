@@ -5,7 +5,7 @@
 			    	"creation_time" : "{{ page.creation_time }}",
 			    	"title" : "{{page.title}}",
 			    	"id" : "{{page.id}}"
-				},
+				}{% if not forloop.last %},{% endif %} 
 			{% endfor %}
 	]
 }
