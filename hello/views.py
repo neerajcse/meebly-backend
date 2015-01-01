@@ -21,6 +21,10 @@ def last_id(request):
 # figure out a better way to do this.
 @csrf_exempt
 def rest(request):
+	if not request.user.is_authenticated():
+		res = HttpResponse("Unauthorized")
+		res.status_code = 401
+		return res
 	if request.method == "GET":
 	    pages = Page.objects.all()
 	    return render(request, 'pages.html', {'pages': pages})
@@ -48,3 +52,6 @@ def rest(request):
 		page.save()
 		pages = Page.objects.all()
 		return render(request, 'pages.html', {'pages': pages})
+
+def loggedin(request):
+	return render(request, 'logged_in_view.html', {'request': request})
