@@ -75,8 +75,8 @@ PROJECT_ROOT = os.path.normpath(os.path.join(SETTINGS_ROOT, '..'))
 #        'ENGINE': 'django.db.backends.sqlite3',
 #        'NAME': os.path.join(PROJECT_ROOT, 'db.sqlite3'),
 #}
-
-DATABASES["default"] = dj_database_url.config()
+DATABASES = {}
+DATABASES['default'] =  dj_database_url.config()
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
