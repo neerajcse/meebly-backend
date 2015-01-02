@@ -70,12 +70,12 @@ WSGI_APPLICATION = 'gettingstarted.wsgi.application'
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 SETTINGS_ROOT = os.path.dirname(os.path.realpath(__file__))
 PROJECT_ROOT = os.path.normpath(os.path.join(SETTINGS_ROOT, '..'))
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(PROJECT_ROOT, 'db.sqlite3'),
-    }
-}
+#DATABASES["default"] = {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(PROJECT_ROOT, 'db.sqlite3'),
+#}
+
+DATABASES["default"] = dj_database_url.config()
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
