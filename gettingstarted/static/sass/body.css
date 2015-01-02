@@ -1,0 +1,199 @@
+@font-face {
+  font-family: WeeblyWeb;
+  src: url("Font/VAGRoundedStd-Light.otf") format("opentype"); }
+@font-face {
+  font-family: WidgetHeaderFont;
+  src: url("Font/ProximaNova-Sbold.otf") format("opentype"); }
+html {
+  height: 100%; }
+
+body {
+  background-color: #FFFFFF;
+  height: 100%;
+  font-family: WeeblyWeb;
+  padding: 0px;
+  margin: 0px; }
+
+.header {
+  background-color: #518DCA;
+  height: 35px;
+  clear: both; }
+
+.weebly-logo {
+  height: 39px;
+  width: 39px;
+  padding-left: 20px; }
+
+.side-toolbox {
+  width: 160px;
+  height: 90%;
+  background: #2C3E50;
+  float: left;
+  display: inline;
+  box-shadow: inset 0 0 10px #000000; }
+  .side-toolbox .side-widget {
+    height: auto; }
+    .side-toolbox .side-widget .widget-header {
+      background-color: #4F657B;
+      height: 20px;
+      font-family: WidgetHeaderFont;
+      font-size: 10pt;
+      color: #879EB4;
+      text-align: center;
+      vertical-align: middle;
+      padding-top: 3px;
+      box-shadow: -2px 2px 2px 1px #1F2E3C; }
+    .side-toolbox .side-widget .widget-content .widget-element {
+      width: 78px;
+      display: inline;
+      float: left;
+      height: 85px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid #21313F; }
+      .side-toolbox .side-widget .widget-content .widget-element .element-icon {
+        background-image: url("Sprites/Element-Icons.png");
+        width: 55px;
+        height: 65px;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: move; }
+      .side-toolbox .side-widget .widget-content .widget-element .element-label {
+        font-size: 12px;
+        color: #879EB4;
+        cursor: context-menu;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        user-select: none; }
+
+.elements-widget .widget-content {
+  height: 175px; }
+
+.pages-widget .widget-content {
+  height: 50px; }
+
+.settings-widget .widget-content {
+  height: 50px; }
+
+.widget-element .title {
+  background-position: 4%; }
+
+.widget-element .text {
+  background-position: 35%; }
+
+.widget-element .image {
+  background-position: 65%; }
+
+.widget-element .nav {
+  background-position: 96%; }
+
+.page-container {
+  width: auto;
+  float: left;
+  height: 90%; }
+  .page-container #page-contents div.notselected {
+    display: none; }
+  .page-container #page-contents div.selected {
+    display: block; }
+
+#add-page-button {
+  border: 2px solid white;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 85%; }
+  #add-page-button .holder {
+    width: 80%;
+    display: inline;
+    float: left; }
+    #add-page-button .holder #name-field {
+      background: none;
+      border: 0px none;
+      padding: 4px;
+      width: 100%;
+      margin: 5px;
+      color: white; }
+    #add-page-button .holder #name-field:focus {
+      outline: 0; }
+  #add-page-button #add-button {
+    background-image: url("Sprites/Add-Delete-Edit-Icons.png");
+    width: 20px;
+    height: 20px;
+    background-position: 15% 50%;
+    vertical-align: middle;
+    border: 0px none;
+    float: left;
+    margin-top: 8px; }
+
+#add-page-button:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both; }
+
+.edit-page-group {
+  border: 2px solid white;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 85%; }
+  .edit-page-group .holder {
+    width: 70%;
+    display: inline;
+    float: left; }
+    .edit-page-group .holder .title {
+      background: none;
+      border: 0px none;
+      padding: 4px;
+      width: 100%;
+      margin: 5px;
+      color: white; }
+    .edit-page-group .holder .title:focus {
+      outline: 0; }
+  .edit-page-group .edit-button {
+    background-image: url("Sprites/Add-Delete-Edit-Icons.png");
+    width: 20px;
+    height: 20px;
+    background-position: 45% 50%;
+    vertical-align: middle;
+    border: 0px none;
+    float: left;
+    margin-top: 8px; }
+  .edit-page-group .delete-button {
+    background-image: url("Sprites/Add-Delete-Edit-Icons.png");
+    width: 20px;
+    height: 20px;
+    background-position: 85% 50%;
+    vertical-align: middle;
+    border: 0px none;
+    float: left;
+    margin-top: 8px; }
+
+.edit-page-group:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both; }
+
+#page-tabs-div ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center; }
+
+#page-tabs-div ul li {
+  display: inline;
+  min-width: 40px;
+  padding: 0px 20px 0px 20px;
+  height: 20px;
+  border: 1px solid;
+  margin: 10px; }
+
+#page-tabs-div ul li:hover {
+  color: #fff;
+  background-color: #369; }
+
+/*# sourceMappingURL=body.css.map */
