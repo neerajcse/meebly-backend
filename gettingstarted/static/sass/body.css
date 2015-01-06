@@ -189,8 +189,9 @@ body {
   min-width: 40px;
   padding: 0px 20px 0px 20px;
   height: 20px;
-  border: 1px solid;
-  margin: 10px; }
+  border: 2px solid #8B87B8;
+  margin: 10px;
+  border-radius: 5px; }
 
 #page-tabs-div ul li:hover {
   color: #fff;
